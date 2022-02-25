@@ -1,0 +1,509 @@
+::-webkit-scrollbar{
+    display: none;
+}
+:root{
+    --icon-yellow:#ffc300;
+    --icon-blue:#003566;
+    --icon-green:rgb(6, 167, 125);
+    --icon-red:#CC2936;
+    --icon-light:#B4A0E5;
+}
+body{
+    margin: 0;
+}
+nav{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--icon-blue);
+}
+p{
+    text-align: justify;
+}
+.sec-styles{
+    margin-top: 3rem;
+}
+#logo{
+    width: 14rem;
+    height: 5rem;
+}
+.navlist{
+    list-style-type: none;
+    float: right;
+}
+.navlist li{
+    color: var(--icon-yellow);
+    margin: 1rem 1rem 0 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.navlist li a{
+    text-decoration: none;
+    color: var(--icon-yellow);
+}
+.menu-icon{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: none;
+}
+.menu-icon img{
+    width: 30px;
+}
+/*=====================================================banner section=======================================================================*/
+
+.banner{
+    width: 100%;
+    height: 40rem;
+    background-image:linear-gradient(rgba(0, 53, 102,0.7),rgba(0, 53, 102,0.7)),url(images/banner-image1.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding-top: 12rem;
+}
+.banner h1{
+    color: var(--icon-yellow);
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.banner p{
+    color: white;
+    font-weight:light;
+    font-size: 18px;
+    text-align: center;
+}
+.banner button{
+    background-color: var(--icon-yellow);
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    color: var(--icon-blue);
+    font-weight: bold;
+    border-radius: 26px;
+}
+.banner button:active{
+    background-color: var(--icon-red);
+}
+
+/*==========================================================feature section==================================================================*/
+
+.feature-area{
+    position: relative;
+}
+.feature-wrapper{
+    position: absolute;
+    top: -80px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.feature-card{
+    width: 60%;
+    height: 305px;
+    margin: auto;
+    border: 1px solid var(--icon-blue);
+    padding: 1rem 20px 10px 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 13px black;
+}
+.feature-card img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+.feature-card h3{
+    margin: 1rem auto 1rem auto;
+    color: var(--icon-blue);
+}
+.feature-card:hover{
+    transform: scale(1.1);
+}
+
+/*================================================================introduction section========================================================*/
+
+.intro-wrapper{
+    margin-top: 19rem;
+}
+.intro-image{
+    width: 80%;
+}
+.intro-text-wrapper{
+    padding-top: 5rem;
+}
+.intro-text-wrapper h2{
+    margin-bottom: 2rem;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--icon-blue);
+}
+
+/*=============================================================testimonial secton=============================================================*/
+
+.testimonial-card{
+    width: 70%;
+    margin: 3rem auto 2rem auto;
+    position: relative;
+    padding: 4rem 20px 20px 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+}
+.testimonial-card img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    right: 50%;
+    top: -50px;
+    transform: translateX(50%);
+    border: 1px solid var(--icon-yellow);
+}
+.testimonial-card h4{
+    color: var(--icon-blue);
+}
+#testimonials{
+    background-color: rgb(0, 53, 102);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#testimonials center{
+    margin-bottom: 3rem;
+    color: white;
+}
+.testimonial-card-anim{
+    animation: 1s testimonialCard ease-in forwards;
+}
+@keyframes testimonialCard{
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*=========================================================price section====================================================================*/
+
+.price-card{
+    width: 70%;
+    box-shadow: 0px 0px 13px black;
+    margin: auto;
+    text-align: center;
+    padding: 30px 15px 15px 15px;
+    height: 370px;
+    position: relative;
+}
+#priceSection{
+    padding-top: 2rem;
+}
+#priceSection h2{
+    margin-bottom: 3rem;
+    color: var(--icon-blue);
+    text-transform: uppercase;
+}
+.price-card div{
+    background-color: var(--icon-blue);
+    width: 70%;
+    color: white;
+    font-size: xx-large;
+    padding: 5px auto 5px auto;
+    margin: 15px auto 10px auto;
+    border-radius: 20px;
+}
+.price-card ul{
+    display: inline-block;
+    text-align: left;
+    margin: auto;
+}
+.price-card button{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 25px;
+    width: 60%;
+    font-size: large;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight:bold;
+    background-color: var(--icon-green);
+    border-radius: 20px;
+    color: white;
+}
+.price-card:hover{
+    transform: translateY(-10px);
+}
+.price-card button:active{
+    background-color: rgb(6, 88, 66);
+}
+
+/*===========================================================status banner==================================================================*/
+
+.status-banner{
+    width: 100%;
+    height: 400px;
+    background-image:linear-gradient(rgba(0,53,102,0.7),rgba(0,53,102,0.7)) ,url(images/status-banner-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.status-element-wrapper{
+    text-align: center;
+    padding-top: 5rem;
+}
+.status-element-wrapper i img{
+    width: 80px;
+    height: 80px;
+}
+.status-element-wrapper h4{
+    color: white;
+    margin-top: 30px;
+}
+.status-element-wrapper span{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*=========================================================contact section=================================================================*/
+#contact-heading{
+    font-weight: bold;
+    color: var(--icon-blue);
+}
+.contact-form{
+    margin:3rem auto 0 auto;
+    width: 95%;
+    text-align: center;
+}
+.contact-form input{
+    width: 70%;
+    height: 57px;
+    margin-bottom: 15px;
+    border: 2px solid var(--icon-blue);
+    border-radius: 20px;
+}
+.form-data{
+    padding-left: 15px;
+}
+#formMessage{
+    height: 145px;
+}
+#formButton{
+    background-color: var(--icon-blue);
+    color: white;
+}
+.address-wrapper{
+    margin: 5rem auto 0 auto;
+}
+.address-wrapper div{
+    width: 40%;
+    margin:3rem auto 0 auto;
+    font-size: 18px;
+    position: relative;
+}
+.address-wrapper div img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -50px;
+    top: 7px;
+}
+
+/*========================================================footer===========================================================================*/
+
+footer{
+    background-color: var(--icon-blue);
+    padding: 3rem 2rem 1rem;
+}
+.about-wrapper{
+    width: 80%;
+    margin: auto;
+    color: var(--icon-yellow);
+}
+.about-wrapper h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.q-link-wrapper{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: var(--icon-yellow);
+}
+.q-link-wrapper h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.q-link-wrapper ul{
+    list-style: none;
+    margin: auto;
+    display: inline-block;
+    text-align: left;
+}
+.q-link-wrapper ul li a{
+    text-decoration: none;
+    color: var(--icon-yellow);
+}
+.social-links{
+    width: 70%;
+    margin: auto;
+    color: var(--icon-yellow);
+    text-align: center;
+}
+.social-links div img{
+    margin-top: 1rem;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.social-links div img:hover{
+    transform: scale(1.2);
+}
+#copyright{
+    text-align: center;
+    color: var(--icon-yellow);
+    margin-top: 5rem;
+    font-size: 12px;
+}
+
+/*===============================================small devices====================================================================*/
+@media screen and (max-width:768px){
+    .menu-icon{
+        display: block;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .navlist{
+        width: 100%;
+        position: relative;
+        background-color: var(--icon-blue); 
+        text-align: center;
+        display: none;
+        padding-bottom: 1rem;
+    }
+    .navlist li{
+        display: block;
+    }
+    .navshow{
+        display: block;
+    }
+    .banner{
+        padding: 10rem 1rem 0;
+    }
+    .feature-area{
+        height: 45rem;
+    }
+    .feature-card{
+        margin-bottom: 3rem;
+    }
+    .intro-image{
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .intro-text-wrapper h2{
+        font-size: 36px;
+        text-align: center;
+    }
+    .testimonial-card{
+        margin-bottom: 3rem;
+    }
+    .price-card{
+        margin: 0 auto 4rem;
+    }
+    .status-banner{
+        height: 470px;
+    }
+    .status-element-wrapper{
+        padding-top: 2rem;
+    }
+    .status-element-wrapper i img{
+        width: 50px;
+        height: 50px;
+    }
+    .status-element-wrapper h4{
+        margin-top: 19px;
+    }
+    .status-element-wrapper span{
+        font-size: 40px;
+    }
+    .address-wrapper{
+        margin-bottom: 3rem;
+    }
+    .q-link-wrapper{
+        margin: 3rem auto 3rem;
+    }
+}
+/*========================================================mobile devices===================================================================*/
+@media screen and (max-width:576px){
+    #logo{
+        width: 8rem;
+        height: 5rem;
+    }
+    .banner{
+        padding-top: 7rem;
+    }
+    .feature-card{
+        width: 95%;
+    }
+    .intro-image{
+        width: 90%;
+    }
+    .intro-text-wrapper{
+        padding: 3rem 1rem 1rem;
+    }
+}
+/*==========================================================medium screen===========================================================*/
+@media screen and (min-width:768px) and (max-width:998px){
+    .feature-card{
+        width: 100%;
+    }
+    .intro-image{
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .intro-text-wrapper{
+        padding-top: 2rem;
+    }
+    .testimonial-card{
+        width: 100%;
+        height: 24rem;
+    }
+    .price-card{
+        width: 100%;
+    }
+    .contact-form{
+        width: 100%;
+    }
+    .contact-form input{
+        width: 95%;
+    }
+    #contact{
+        margin-bottom: 2rem;
+    }
+    .social-links{
+        width: 90%;
+    }
+}
+/*=================================================================large screen======================================================*/
+@media screen and (min-width:998px) and (max-width:1200px){
+    .feature-card{
+        width: 80%;
+    }
+    .intro-image{
+        width: 95%;
+        margin-top: 3rem;
+    }
+}
+
+/*====================================================loader==========================================================================*/
+#preloader{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0) url(images/loader.gif) center center no-repeat;
+    background-size: 100px;
+    position: fixed;
+    z-index: 20;
+}
+
