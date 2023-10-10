@@ -32,3 +32,21 @@ function testimonialAnim(){
         }
     }
 }
+
+$("#myForm").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbzGGvRsLWm_-43qsVGHWtSVWDGlqYD8dRw9_IHujhk8DjUzteuKJ3m6bfhz0kReYRPgaA/exec",
+        data:$("#myForm").serialize(),
+        method:"post",
+        success:function (response){
+            alert("Form submitted successfully")
+            window.location.reload()
+            //window.location.href="https://google.com"
+        },
+        error:function (err){
+            alert("Something Error")
+
+        }
+    })
+})
